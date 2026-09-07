@@ -6,12 +6,6 @@
   border-radius: 50px;
 }
 
-a{
-  color: black;
-  text-decoration: none;
-}
-
-
 body {
   background-color: skyblue;
   font-family: sans-serif;
@@ -26,6 +20,9 @@ header {
   padding: 10px 20px;
 }
 
+a:visited{
+  color: #111;
+}
 
 .Empresa1 {
   border-radius: 25px;
@@ -44,8 +41,6 @@ header {
   gap: 20px;
   font-size: 30px;
 }
-
-
 
 .Usuario {
   border-radius: 100px;
@@ -175,4 +170,52 @@ donde van las eliculas
   .titulo-pelicula {
     font-size: 14px;
   }
+}
+
+/*menuuuu desplegable de generooo
+No tocarrr*/
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.genero {
+  cursor: pointer;
+  margin: 0;
+}
+
+
+.contenido-abajo {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #5eb6e5;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+
+.contenido-abajo a {
+  color: #000000;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+
+.contenido-abajo a:hover {
+  background-color: #eae6e6;
+}
+
+
+.dropdown:hover .contenido-abajo {
+  display: block;
+ 
 }
