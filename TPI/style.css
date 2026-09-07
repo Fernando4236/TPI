@@ -1,26 +1,30 @@
-#Logotipo{
-    background-color: rgb(127, 45, 242);
-    margin-left:auto;
-    
+.logo{
+    background:linear-gradient(rgb(170, 116, 246),rgb(82, 2, 161)) ;
+    padding: 20px 10px;
+    width:auto;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    border-top: 1px solid rgb(170, 116, 246); 
+    box-shadow: inset 0 1px 0 rgba(255, 255,255,0.6), 0 2px 4px rgba(0, 0,0,0.2);
+}
+.T {
+    transition: filter 0.3s ease;
+}
+.T:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
 }
 #Leyenda {
-    background-color: rgb(127, 45, 242);
+    
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
-    top: 25px;
-    left: 80px;
-}
-.Log{
-    text-align:center;
-    align-items:stretch;
-    display:flex;
-    position: absolute;
-    top: 25px;
-    right: 500px;
-    
+    color: white;
+    font:status-bar;
+    letter-spacing: 2px;
+    top: 48px;
+    left: 110px;
 }
 .navegacion{
-    background-color: whitesmoke;
+    background:linear-gradient(rgb(255, 255, 255),rgb(186, 184, 184));
     overflow: hidden;
 }
 .navegacion a{
@@ -28,15 +32,117 @@
     color: black;
     text-align: center;
     padding: 14px 16px;
+    border: 1px outset;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 17px weight;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.navegacion a:hover{
-    background-color: black ;
-    color: white;
+    font-weight: 500;
 }
 .navegacion a.active{
-    background-color: blueviolet;
+    border-radius: 10px 0 0 0;
+}
+.navegacion a:hover{
+    background-color:black;
     color: white;
+}
+.navegacion a.active1{
+    background:linear-gradient(rgb(170, 116, 246),rgb(82, 2, 161));
+    color: white;
+    margin-left: auto;
+    border-radius: 0 10px 0 0;
+}
+.main{
+    background-color: lightgrey;
+    border: black solid 1px;
+}
+.Destacados h1{
+    width: auto;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    margin: 15px 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Destacados img.life{
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 8px;
+    width: 500px;
+    height: 320px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.Destacados img:hover{
+    transform: scale(1.05);
+}
+.Destacados img{
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 300px;
+    height: 150px;
+    transition: transform 0.4s ease;
+}
+.Destacados div.top{
+    display: flex;
+    gap: 50px;
+    margin-left:600px;
+    position:absolute;
+    top: 280px;
+}
+.Destacados div.bottom{
+    display: flex;
+    gap: 50px;
+    margin-left: 600px;
+    position: absolute;
+    top: 450px;
+}
+.agregados {
+    background-color: lightgrey;
+}
+.agregados h2{
+    width: auto;
+    box-sizing: border-box;
+    border:2px solid;
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin: 30px 30px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.agregados img{
+    width: 180px;
+    height: 300px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition: transform 0.4s ease;
+}
+.agregados div{
+    display:inline;
+    padding: 8px;
+    margin-top:auto;
+
+}
+.agregados img:hover{
+    transform: scale(1.05);
+}
+.botonMas div{
+    background-color: lightgrey;
+}
+button{
+    background:linear-gradient(rgb(170, 116, 246),rgb(82, 2, 161));    display: flex;
+    color: white;
+    font:larger;
+    padding: 10px;
+    font-size: larger;
+    position: absolute;
+    align-items:center;
+    right: 50px;
+    border-radius: 50px;
+}
+button :hover{
+
 }

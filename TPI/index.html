@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Trabajo Practico Programacion II">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Matias M">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Truchinga! - Estupidez Colectiva</title>
-        <link rel="icon" href="Imagenes/taringa.png">
-        <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Trabajo Practico Programacion II">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Matias M">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truchinga! - Estupidez Colectiva</title>
+    <link rel="icon" href="Imagenes/taringa.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="Logotipo">
-        <section id="logo">
+        <section class="logo">
             <a href="index.html">
-            <img src="Imagenes/Logo1.png" alt="Logotipo" width="200" height="35">
+                <img class="T" src="Imagenes/Logo1.png" alt="Logotipo" width="250" height="40">
             </a>
-            <h5 id="Leyenda">Estupidez Colectiva!</h5>
-            <span class="Log">
-            <a>Log In</a>
-            <p>|</p>
-            <a>Registrate!</a>
-            </span>
+            <h5 id="Leyenda">>Estupidez Colectiva!</h5>
         </section>
     </header>
-    <br>
-    <div class="navegacion" style="display: flex; align-items: center;">
-    <a class="active" href="#juegos">Juegos</a>
-    <a href="#emuladores">Emuladores</a>
-    <a href="#ayuda">Ayuda</a>
-    <a href="#foro">Foro</a>
-    <a href="#terminos">Terminos y condiciones</a>
-    
-    </div>
-    <main>
 
+    <div class="navegacion" style="display: flex; align-items: center;">
+        <a class="active" href="#juegos">Juegos<img src="Imagenes/triangulo.png" width="30" height="10"></a>
+        <a href="#emuladores">Emuladores<img src="Imagenes/triangulo.png" width="30" height="10"></a>
+        <a href="#ayuda">Ayuda</a>
+        <a href="#foro">Foro</a>
+        <a href="#terminos">Términos y condiciones</a>
+        <a href="#login">Log In</a>
+        <a class="active1" href="#registro">Registrate!</a>
+    </div>
+
+    <main class="main">
+        <section class="Destacados">
+            <h1>Destacados</h1>
+            <a href="#Half Life">
+                <img class="life" src="Imagenes/Juegos/Half Life .webp" alt="Half Life">
+            </a>
+            <div class="top">
+                <a href="#GTA VC">
+                    <img src="Imagenes/Juegos/GTA Vice City.jpg " alt="GTA Vice Ciy">
+                </a>
+                <a href="#Sims">
+                    <img src="Imagenes/Juegos/Sims.jpg" alt="Sims">
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="#MDK">
+                    <img src="Imagenes/Juegos/MDK.jpg" alt="MDK">
+                </a>
+                <a href="#Queake III">
+                    <img src="Imagenes/Juegos/Quake III.jpg" alt="Quake III Arena">
+                </a>
+            </div>
+        </section>
+        <br>
+        <section class="agregados">
+            <h2>Agregados Recientemente</h2>
+            <div>
+                <a href="#Half Life">
+                    <img class="life" src="Imagenes/Juegos/Half Life1.jpg" alt="Half Life">
+                </a>
+            </div>
+            <div>
+                <a href="#GTA VC">
+                    <img src="Imagenes/Juegos/gta-vice-city1.jpg " alt="GTA Vice Ciy">
+                </a>
+            </div>
+            <div>
+                <a href="#Sims">
+                    <img src="Imagenes/Juegos/Sims.jpg" alt="Sims">
+                </a>
+            </div>
+            <div>
+                <a href="#MDK">
+                    <img src="Imagenes/Juegos/MDK.jpg" alt="MDK">
+                </a>
+            </div>
+            <div>
+                <a href="#Queake III">
+                    <img src="Imagenes/Juegos/Quake III.jpg" alt="Quake III Arena">
+                </a>
+            </div>
+            <div>
+                <a href="#Monkey">
+                    <img src="Imagenes/Juegos/Monkey Island.png" alt="Monkey Island">
+                </a>
+            </div>
+            <div>
+                <a href="#warcraft III">
+                    <img src="Imagenes/Juegos/Warcraft.jpg" alt="Warcraft III">
+                </a>
+            </div>
+            <div>
+                <a href="#Simpsons">
+                    <img src="Imagenes/Juegos/Simpsons.jpg" alt="Simpsons Hit and Run">
+                </a>
+            </div>
+
+            <button type="button">+ Ver Más</button>
+            
+        </section>
     </main>
 </body>
+
 </html>
