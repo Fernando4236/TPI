@@ -22,15 +22,44 @@
         </section>
     </header>
 
-    <div class="navegacion" style="display: flex; align-items: center;">
-        <a class="active" href="#juegos">Juegos<img src="Imagenes/triangulo.png" width="30" height="10"></a>
-        <a href="#emuladores">Emuladores<img src="Imagenes/triangulo.png" width="30" height="10"></a>
-        <a href="#ayuda">Ayuda</a>
-        <a href="#foro">Foro</a>
-        <a href="#terminos">Términos y condiciones</a>
-        <a href="#login">Log In</a>
-        <a class="active1" href="#registro">Registrate!</a>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Juegos
+                <img src="Imagenes/triangulo.png" width="35px" height="15px"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Todos">Todos</a>
+                <a href="#Acción">Acción</a>
+                <a href="#Aventura">Aventura</a>
+                <a href="#Conducción">Conducción</a>
+                <a href="#Deportes">Deportes</a>
+                <a href="#FPS">FPS</a>
+                <a href="#Plataforma">Plataforma</a>
+                <a href="#RPG">RPG</a>
+                <a href="#RTS">RTS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Emuladores
+                <img src="Imagenes/triangulo.png" width="35px" height="15px"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Todos">Todos</a>
+                <a href="#PS1"><img class="EmuIco" src="Imagenes/PS1.png" alt="PS1"></a>
+                <a href="#PS2"><img class="EmuIco" src="Imagenes/PS2.png" alt="PS2"></a>
+                <a href="#NES"><img class="EmuIco" src="Imagenes/NES.png" alt="NES"></a>
+                <a href="#N64"><img class="EmuIco" src="Imagenes/N64.png" alt="N64"></a>
+                <a href="#SEGA"><img class="EmuIco" src="Imagenes/SEGA.png" alt="SEGA"></a>
+                <a href="#Mas">Más...</a>
+            </div>
+        </div>
+        <a href="#Foro">Foro</a>
+        <a href="#Ayuda">Ayuda</a>
+        <a class="Log" href="#Registrate!"><img class="identi" src="Imagenes/identificacion.png" alt="identificación">Registrate!</a>
+        <a class="Log" href="#login">Log in</a>
     </div>
+    </div>
+
 
     <main class="main">
         <section class="Destacados">
@@ -99,8 +128,8 @@
                 </a>
             </div>
 
-            <button type="button">+ Ver Más</button>
-            
+            <button class="verMas" type="button">+ Ver Más</button>
+
         </section>
     </main>
 </body>
