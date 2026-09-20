@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
+}
+
+body {
+  background-color: skyblue;
+  font-family: sans-serif;
+}
+
+a{
+  color:black;
+}
+
+/* No tocar si no quieren organizar
+como en los dispositivos*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 20px;
+}
+
+.Empresa1 {
+  border-radius: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+.Titulo {
+  font-size: 90px;
+  margin-left: 10px;
+  
+}
+
+.logo{
+  color: #3b82f6;
+}
+
+.Interaccion {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.Usuario {
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+  margin-right: 20px;
+}
+
+.la-info-pelicula-y-serie{
+  display: grid;
+  grid-template-columns: auto minmax(250px, 500px);
+  gap: 5px 30px; 
+  grid-template-rows: auto 1fr;
+  justify-content: center; 
+  align-items: start;      
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+
+.la-info-pelicula-y-serie img{
+  grid-row: span 2;
+}
+
+.titulo-centrado{
+  font-size: 50px;
+}
+
+.parrafo{
+  font-size: 20px;
+}
+
+.Trailer{
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.Trailer:hover{
+  transform: scale(1.1);
+}
+
+.video{
+  text-align: center;
+}
+
+
+/*########################*/
+/*Enpieza el footer*/
+
+.footer-principal {
+  background-color:rgb(122, 182, 205);
+  color: #c9d1d9;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-top: 1px solid #21262d;
+}
+
+.footer-contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-columna {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.footer-logo span {
+  color: #3b82f6; /* este color resalta lindo como la pagina */
+}
+
+.footer-descripcion {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #171c22;
+}
+
+.footer-columna h4 {
+  color: #251515;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #005cf0;
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #21262d;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #030405;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .Empresa1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .Titulo {
+    font-size: 55px;
+  }
+
+  .Interaccion {
+    font-size: 20px;
+    gap: 15px;
+  }
+
+  .Usuario {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/*Mi celular va bien, probar en otros celulares*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .Empresa1 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Titulo {
+    font-size: 38px;
+    margin-left: 0;
+  }
+
+  .Interaccion {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 17px;
+    gap: 12px;
+  }
+
+  .Usuario {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+  }
+}
+
+
+/*###############################################
+Lo mismo de arriba, esto es para el MAIN
+donde van las eliculas
+#################################################*/
+.contenedor-peliculas {
+  max-width: 1400px;
+  width: 60%;
+  margin: 50px auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  margin-top: 0px;
+}
+
+.tarjeta-pelicula {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+}
+
+.tarjeta-pelicula:hover {
+  transform: scale(1.1);
+}
+
+
+.titulo-pelicula {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+/*Mi tablet*/
+@media (max-width: 1024px) {
+  .contenedor-peliculas {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+
+  .titulo-pelicula {
+    font-size: 16px;
+  }
+}
+
+/*Celular*/
+@media (max-width: 768px) {
+  .contenedor-peliculas {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+
+
+  .titulo-pelicula {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
