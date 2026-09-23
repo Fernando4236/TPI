@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+
+body {
+  background: linear-gradient(rgb(128, 194, 229), rgba(8, 40, 99, 0.774));
+  font-family: sans-serif;
+
+}
+
+/* No tocar si no quieren organizar
+en cada dispositivo*/
+header {
+  background: linear-gradient(rgba(8, 40, 99, 0.617), rgba(128, 194, 229, 0));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*logo nuevo*/
+
+.Empresa1 {
+  flex-shrink: 0;
+  width: 380px;
+  min-width: 380px;
+  height: 120px;
+  object-fit: contain;
+  padding-left: 50px;
+  transition: filter 0.3s ease;
+}
+
+/* para que brille cuando se pasa el mouse*/
+.Empresa1:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.753));
+
+}
+
+.logo {
+  color: #3b82f6;
+}
+
+/*barra de busqueda*/
+.searchbox {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 38px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.searchbox form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 4px 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchbar {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  color: #555;
+  background: transparent;
+
+}
+
+/* para que el boton sea solamente el icono de la lupa*/
+.searchbtn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  outline: none;
+  margin-left: 8px;
+}
+
+.searchbtn:hover .lupa {
+  opacity: 1;
+}
+
+.searchbar::placeholder {
+  color: #ababab;
+}
+
+.lupa {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.Interaccion {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.Interaccion a:hover {
+  text-shadow: 2px 2px 4px #000000, 0 0 10px #000000;
+  color: white;
+
+
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  gap: 40px;
+
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 27px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(128, 194, 229);
+  min-width: 160px;
+  margin-left: -5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  border: rgb(17, 32, 106) solid 1px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(3, 93, 141);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Usuario {
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+  margin-right: 20px;
+}
+
+
+.la-info-pelicula-y-serie{
+  display: grid;
+  grid-template-columns: auto minmax(250px, 500px);
+  gap: 5px 30px; 
+  grid-template-rows: auto 1fr;
+  justify-content: center; 
+  align-items: start;      
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+
+.la-info-pelicula-y-serie img{
+  grid-row: span 2;
+}
+
+.titulo-centrado {
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800 bolder;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 10px #000000;
+}
+
+.parrafo, .parrafo a {
+  font-size: 20px;
+  text-align: justify;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800 bolder;
+  color: white;
+  text-shadow: 2px 2px 4px #000000, 0 0 10px #000000;
+}
+
+.btnTrailer {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items:center;
+  padding: 25px 30px;
+  margin-top: 15px;
+  background-color: #005cf0;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  position:relative;
+  z-index: 30;
+  
+}
+
+.btnTrailer:hover {
+  background-color: #051fe8;
+  transform: scale(1.04);
+}
+
+
+
+
+
+
+/* --- TEMPORADAS --- */
+.seccion-series-episodios {
+  max-width: 1200px;
+  margin: 50px auto 40px auto;
+  padding: 0 25px;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+
+.contenedor-botones-temporadas {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+
+.btn-temporada {
+  background-color: #0b1c2d;
+  color: #ffffff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-temporada:hover {
+  background-color: #142f4c;
+}
+
+
+.btn-temporada.activa {
+  background-color: #f59e0b;
+  color: #000000;
+  font-weight: bold;
+}
+
+.subtitulo-seccion {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 18px;
+}
+
+
+.grupo-episodios {
+  display: none; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.grupo-episodios.activo {
+  display: grid; 
+}
+
+/* Tarjetas de cada episodio */
+.tarjeta-episodio {
+  background-color: #0b1c2d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-episodio:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta-episodio img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.nombre-episodio {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+/* --- No tocar esto es del reproductor oculto --- */
+.modal-reproductor {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-video {
+  position: relative;
+  width: 90%;
+  max-width: 850px;
+  background-color: #0b1c2d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+.titulo-reproductor {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.btn-cerrar:hover {
+  color: #f59e0b;
+}
+
+.contenedor-video video {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 8px;
+  background-color: #000;
+  display: block;
+}
