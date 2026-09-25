@@ -11,6 +11,7 @@ buscando crear una experiencia visualmente atractiva y fácil de utilizar.
 🚀 Funcionalidades
 
 🏠 Página principal
+
 Desarrollamos una página principal que funciona como punto de entrada a TodoPlay y
 permite comenzar a explorar los diferentes contenidos disponibles.
 En ella organizamos distintos contenidos audiovisuales para que los usuarios puedan
@@ -19,6 +20,7 @@ Buscamos que la distribución de los elementos sea clara y que permita encontrar
 rápidamente el contenido que se desea consultar.
 
 🎬 Películas
+
 Creamos una sección dedicada a las películas, donde organizamos diferentes títulos para
 que los usuarios puedan explorarlos de manera sencilla.
 Presentamos los contenidos de forma visual y ordenada, permitiendo recorrer las distintas
@@ -27,6 +29,7 @@ También incorporamos información relacionada con las películas para que los u
 puedan conocer más sobre cada título antes de seleccionarlo.
 
 📺 Series
+
 También desarrollamos una sección dedicada exclusivamente a las series.
 En esta sección organizamos diferentes títulos y presentamos información relacionada con
 cada uno de ellos.
@@ -34,6 +37,7 @@ Buscamos mantener una estructura similar a la sección de películas para que la
 resulte sencilla y el usuario pueda acceder fácilmente a los diferentes contenidos.
 
 🔎 Exploración de contenido
+
 Trabajamos en una interfaz que permite recorrer los diferentes contenidos audiovisuales de
 una manera visual y organizada.
 Organizamos las películas y series en diferentes secciones para facilitar su identificación y
@@ -42,6 +46,7 @@ Nuestro objetivo fue que la navegación fuera intuitiva y que el usuario pudiera
 por el contenido sin problema.
 
 🎞 Información de los contenidos
+
 Incorporamos información relacionada con las diferentes películas y series disponibles en
 nuestra página.
 De esta manera, los usuarios pueden conocer diferentes características de los contenidos
@@ -50,6 +55,7 @@ Buscamos poner esta información de forma clara y ordenada para que sea fácil d
 interpretar.
 
 🧭 Navegación
+
 Desarrollamos diferentes secciones que permiten navegar por TodoPlay de manera sencilla.
 Organizamos el contenido de forma que los usuarios puedan desplazarse entre las
 diferentes categorías y acceder rápidamente a las películas y series.
@@ -57,6 +63,7 @@ También buscamos mantener una estructura coherente entre las distintas partes d
 página para mejorar la experiencia de navegación.
 
 🎨 Diseño
+
 Para el diseño de TodoPlay quisimos crear una interfaz relacionada con el mundo del
 entretenimiento y el contenido audiovisual.
 Trabajamos en la distribución de los diferentes elementos de la página para conseguir una
@@ -65,7 +72,9 @@ Utilizamos diferentes estilos, imágenes y elementos gráficos para lograr que l
 series sean fáciles de identificar.
 También buscamos que la cantidad de contenido presentada no afecte la facilidad de
 navegación y que las diferentes secciones mantengan una estructura clara.
+
 🛠 Tecnologías utilizadas
+
 Para desarrollar TodoPlay utilizamos diferentes tecnologías web:
 - HTML
 - CSS
@@ -89,6 +98,7 @@ Esto nos permitió trabajar con diferentes elementos dinámicos y mejorar la exp
 usuario al interactuar con el sitio.
 
 📁 Organización del proyecto
+
 Organizamos nuestro proyecto en diferentes archivos y carpetas para facilitar el desarrollo y
 mantenimiento de la página.
 Separamos los diferentes recursos utilizados, como las imágenes, los archivos HTML, las
@@ -97,6 +107,7 @@ Esta organización nos permitió trabajar de manera más ordenada y facilitar lo
 incorporamos durante el desarrollo.
 
 👥 Integrantes
+
 Nuestro proyecto fue realizado por:
 - 👤 Fernando Torres
 - 👤 Matias Mazzaro
@@ -105,6 +116,7 @@ Trabajamos de manera conjunta en el desarrollo y organización de TodoPlay, cola
 para completar las distintas partes del proyecto.
 
 🤝 Trabajo colaborativo
+
 Para desarrollar TodoPlay trabajamos de manera grupal utilizando GitHub.
 Utilizamos el repositorio para compartir nuestro código y mantener organizado el proyecto
 durante el desarrollo.
@@ -114,10 +126,12 @@ El uso de GitHub nos permitió trabajar sobre el mismo proyecto, mantener un reg
 cambios y facilitar la colaboración entre nosotros.
 
 📌 Futuras mejoras
+
 A medida que continuemos haciendo el proyecto, pensamos que estaría bueno incorporar
 nuevas funcionalidades y mejoras.
 
 Algunas de las que podríamos agregar son:
+
   🔎 Mejorar las opciones de búsqueda.
   ⭐ Agregar un sistema de películas y series favoritas.
   📅 Incorporar información sobre próximos estrenos.
@@ -127,6 +141,7 @@ Algunas de las que podríamos agregar son:
   ⚡ Optimizar el rendimiento y los tiempos de carga de la página.
 
 🎯 Objetivo del proyecto
+
 Nuestro objetivo con TodoPlay fue desarrollar una página web relacionada con el
 entretenimiento que permita presentar y organizar diferentes películas y series de una
 manera clara, atractiva y fácil de utilizar.
