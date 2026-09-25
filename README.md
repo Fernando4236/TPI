@@ -1,4 +1,5 @@
 🎬TodoPlay
+
 TodoPlay es una página web que desarrollamos como un proyecto dedicado al
 entretenimiento, enfocándonos principalmente en películas y series.
 Nuestro objetivo fue crear un espacio donde los usuarios puedan explorar y descubrir
