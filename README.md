@@ -112,10 +112,16 @@ Nuestro proyecto fue realizado por:
 - 👤 Fernando Torres
 - 👤 Matias Mazzaro
 - 👤 Facundo Leguizamón
+- 👤 Mauricio Rodriguez
+
+
+
 Trabajamos de manera conjunta en el desarrollo y organización de TodoPlay, colaborando
 para completar las distintas partes del proyecto.
 
+
 🤝 Trabajo colaborativo
+
 
 Para desarrollar TodoPlay trabajamos de manera grupal utilizando GitHub.
 Utilizamos el repositorio para compartir nuestro código y mantener organizado el proyecto
@@ -125,6 +131,7 @@ repositorio.
 El uso de GitHub nos permitió trabajar sobre el mismo proyecto, mantener un registro de los
 cambios y facilitar la colaboración entre nosotros.
 
+
 📌 Futuras mejoras
 
 A medida que continuemos haciendo el proyecto, pensamos que estaría bueno incorporar
@@ -133,12 +140,19 @@ nuevas funcionalidades y mejoras.
 Algunas de las que podríamos agregar son:
 
   🔎 Mejorar las opciones de búsqueda.
+  
   ⭐ Agregar un sistema de películas y series favoritas.
+  
   📅 Incorporar información sobre próximos estrenos.
+  
   🎬 Ampliar la cantidad de películas y series disponibles.
+  
   📊 Incorporar nuevas categorías para organizar el contenido.
+  
   🌐 Integrar nuevas fuentes de información sobre películas y series.
+  
   ⚡ Optimizar el rendimiento y los tiempos de carga de la página.
+  
 
 🎯 Objetivo del proyecto
 
@@ -151,3 +165,62 @@ de versiones como GitHub.
 
 Además, buscamos poner en práctica el trabajo colaborativo, organizándonos entre
 nosotros para desarrollar las diferentes partes del proyecto y conseguir un resultado final que combine diseño, funcionalidad y facilidad de uso
+
+
+📌 ítems a tener en cuenta sobre el proyecto:
+
+Durante el desarrollo de TodoPlay encontramos algunas características que todavía se encuentran en proceso de desarrollo, así como algunas limitaciones y dificultades que tuvimos que afrontar.
+
+
+📂 Categorías
+
+La sección “Categorías” se encuentra disponible y puede desplegarse correctamente. Sin embargo, actualmente no cuenta con contenido dentro de sus diferentes categorías.
+
+
+📺 Series
+
+En la sección de series actualmente contamos con un solo contenido disponible: “The Mentalist”.
+
+Dentro de esta sección se encuentra disponible el episodio 1, junto con un corto 
+
+
+🎬 Películas
+
+Las películas se encuentran funcionales dentro de la página, aunque actualmente **no cuentan con enlaces externos**.
+
+
+🌙 Modo oscuro
+
+Actualmente presenta un bug pero no afecta su funcionamiento principal. Sin embargo, el modo oscuro todavía no se encuentra disponible en las secciones de Categorías, Series y Películas.
+
+
+🔗 Dificultades con GitHub
+
+Durante el desarrollo tuvimos algunas dificultades relacionadas con el uso de GitHub, principalmente al momento de trabajar de manera colaborativa y subir o actualizar los diferentes archivos del proyecto.
+
+Estas dificultades nos permitieron familiarizarnos más con el uso de repositorios, commits, pushes, pulls y el trabajo colaborativo.
+
+
+🎥 Video de anuncio
+
+Dentro de la página incorporamos un video de anuncio únicamente como prueba.
+
+El objetivo fue probar cómo funcionaba la incorporación y reproducción de contenido multimedia dentro de la página.
+
+
+
+
+💻 Desarrollo del proyecto
+
+Comenzamos el desarrollo del proyecto antes de incorporar algunos de los contenidos y funcionalidades que fuimos trabajando posteriormente.
+
+Por este motivo, actualmente contamos con una mayor cantidad de código HTML en comparación con JavaScript.
+
+A medida que fuimos avanzando, incorporamos JavaScript para agregar diferentes funcionalidades e interacciones a nuestra página.
+
+
+🔒 Políticas de uso y privacidad
+
+La sección de “Políticas de uso y privacidad” se encuentra actualmente disponible únicamente desde la página principal (index).
+
+Desde ahí los usuarios pueden acceder a la información correspondiente a las políticas del sitio.
