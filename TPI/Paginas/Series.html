@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Peliculas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="icon" href="../assets/ico/Empresa1.ico">
+    <script>
+    if (localStorage.getItem('modoOscuro') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+    }
+</script>
+</head>
+<body>
+    <!--De aqui es la parte de arriba-->
+    <header>
+        <div>
+            <a href="../Index.html">
+                <img src="../assets/ico/Logo.png" class="Empresa1" alt="Logo">
+            </a>
+        </div>
+        <div class="searchbox">
+            <form action="#busqueda">
+                <input class="searchbar" type="text" placeholder="Buscar...">
+                <button class="searchbtn" type="button"><img class="lupa"
+                        src="../assets/ico/59cfc4d2d3b1936210a5ddc7.png" alt="Search"></button>
+            </form>
+        </div>
+        <div class="Interaccion">
+
+            <a href="../Paginas/Peliculas.html">Películas</a>
+            <a href="../Paginas/Series.html">Series</a>
+            <div class="navbar">
+                
+                <a href="Usuario/iniciar.html">Inciar Sesión</a>
+                <div style="display: flex; align-items: center;">
+                    <a href="../Paginas/Usuario/Usuario.html">
+                        <p>Registrarse</p>
+                    </a>
+                    <img src="../assets/ico/Empresa1.ico" class="Usuario" alt="Usuario">
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <main class="contenedor-peliculas">
+        
+        <div class="tarjeta-pelicula">
+            <a href="../Paginas/Series/El mentalista.html">
+            <img src="../assets/img-series/El mentalista.jpg" alt="El mentalista">
+            </a>
+            <h3 class="titulo-pelicula">El mentalista</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Asi aprenderas.jpg" alt="Asi aprenderas">
+            <h3 class="titulo-pelicula">Asi Aprenderas</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Earth.jpg" alt="Earth">
+            <h3 class="titulo-pelicula">Earth</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <a href="Index.html">
+            <img src="../assets/img-series/Furia.jpg" alt="Furia">
+            <h3 class="titulo-pelicula">Furia</h3>
+            </a>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Gign.jpg" alt="Gign: unidad de elite">
+            <h3 class="titulo-pelicula">Unidad de elite</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Justicia.jpg" alt="Justicia">
+            <h3 class="titulo-pelicula">Justicia</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Lucky.jpg" alt="Lucky">
+            <h3 class="titulo-pelicula">Lucky</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/M.I.A.jpg" alt="M.I.A">
+            <h3 class="titulo-pelicula">M.I.A</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Prisoner.jpg" alt="Prisioner">
+            <h3 class="titulo-pelicula">Prisioner</h3>
+        </div>
+
+        <div class="tarjeta-pelicula">
+            <img src="../assets/img-series/Ted Lasso.jpg" alt="Ted Lasso">
+            <h3 class="titulo-pelicula">Ted Lasso</h3>
+        </div>
+
+        
+
+
+    </main>
+
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
+    
+        <div class="footer-columna">
+            <h3 class="footer-logo">Todo<span>Play</span></h3>
+            <p class="footer-descripcion">
+             Tu pagina favorita para ver y descubrir las mejores películas, series y estrenos.
+            </p>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+             <li><a href="Peliculas.html">Películas</a></li>
+             <li><a href="Series.html">Series</a></li>
+              <li><a href="../Index.html">Inicio</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 TodoPlay. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script src="Usuario/iniciarla.js"></script>
+</body>
+</html>

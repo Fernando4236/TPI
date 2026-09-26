@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2b6cb0 0%, #3182ce 15%, #63b3ed 50%, #90cdf4 85%, #bee3f8 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* menu interactivo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 60px 15px 60px;
+    width: 100%;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img {
+    height: 48px;
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+.search-container {
+    position: relative;
+    width: 440px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 9px 40px 9px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: #ffffff;
+    font-size: 13.5px;
+    color: #4a5568;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.search-input::placeholder {
+    color: #a0aec0;
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1a202c;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #000000;
+    font-weight: 600;
+}
+
+
+.nav-avatar {
+    width: 44px;
+    height: 44px;
+    background-color: #050505;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+}
+
+.avatar-text {
+    font-size: 9px;
+    line-height: 1.1;
+    letter-spacing: -0.2px;
+}
+
+/*quedo bonito con la targeta */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+}
+
+.form-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 580px;
+    padding: 42px 48px;
+    border-radius: 26px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h2 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    font-size: 13.5px;
+    color: #718096;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1.2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #2d3748;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #a0aec0;
+}
+
+.form-group input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 10px 0 25px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: #2563eb;
+}
+
+.checkbox-group label {
+    font-size: 13px;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+/* El boton va a quedar azul............... */
+.btn-submit {
+    width: 100%;
+    padding: 13px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #718096;
+}
+
+.footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Perfil */
+.perfil-datos {
+    background: #f7fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+.perfil-datos p {
+    font-size: 14.5px;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.perfil-datos strong {
+    color: #1a202c;
+}
+
+.btn-logout {
+    width: 100%;
+    padding: 12px;
+    background-color: #e53e3e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #c53030;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+}
