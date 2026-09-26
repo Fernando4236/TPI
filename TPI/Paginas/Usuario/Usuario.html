@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - TodoPlay</title>
+    <link rel="stylesheet" href="Usuario.css">
+    <link rel="icon" href="../../assets/ico/Empresa1.ico">
+    <script>
+        if (localStorage.getItem('modoOscuro') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="cabecera" style="display: flex; align-items: center;">
+            <a href="../../Index.html">
+                <img src="../../assets/ico/Logo.png" class="Empresa1" alt="Logo">
+            </a>
+        </div>
+
+        <div class="searchbox">
+            <form action="#busqueda">
+                <input class="searchbar" type="text" placeholder="Buscar...">
+                <button class="searchbtn" type="button">
+                    <img class="lupa" src="../../assets/ico/59cfc4d2d3b1936210a5ddc7.png" alt="Search">
+                </button>
+            </form>
+        </div>
+
+        <div class="Interaccion">
+            <div class="dark-mode-toggle">
+                <label class="switch" title="Modo Claro / Oscuro">
+                    <input type="checkbox" id="toggleDarkMode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <a href="../Peliculas.html">Películas</a>
+            <a href="../Series.html">Series</a>
+            <a href="iniciar.html" id="navIniciarSesion">Iniciar Sesión</a>
+
+            <div id="navRegistrarse" style="display: flex; align-items: center;">
+                <a href="Usuario.html">
+                    <p>Registrarse</p>
+                </a>
+            </div>
+
+            <img src="../../assets/ico/Empresa1.ico" class="Usuario" alt="Usuario">
+        </div>
+    </header>
+
+    <main>
+        <div class="form-card" id="seccionRegistro">
+            <div class="card-header">
+                <h2>Crear Cuenta</h2>
+                <p>Únete a TodoPlay para disfrutar de tus películas y series</p>
+            </div>
+
+            <form id="formRegistro" novalidate>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ej: Juan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ej: Perez">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="username">Apodo / Nombre de usuario</label>
+                        <input type="text" id="username" placeholder="juanperez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_nac">Fecha de nacimiento</label>
+                        <input type="date" id="fecha_nac" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="mínimo 4 caracteres" minlength="4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmar contraseña</label>
+                        <input type="password" id="confirm_password" placeholder="Repite tu contraseña" minlength="4" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero_fav">Género favorito</label>
+                    <select id="genero_fav" required>
+                        <option value="" disabled selected>Selecciona tu genero preferido</option>
+                        <option value="Accion">Acción</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Suspenso">Suspenso</option>
+                    </select>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" id="terminos" required>
+                    <span>Acepto los <a href="#" class="link-terminos">términos y condiciones</a></span>
+                </label>
+
+                <button type="submit" class="btn-submit">Registrarse</button>
+            </form>
+        </div>
+
+        <div class="form-card" id="seccionPerfil" style="display: none;">
+            <div class="card-header">
+                <h2>Bonito como el usuario que se registro 💗</h2>
+                <p>Bienvenido a tu cuenta de TodoPlay</p>
+            </div>
+
+            <div class="perfil-datos">
+                <p><strong>Nombre:</strong> <span id="perfilNombreCompleto"></span></p>
+                <p><strong>Usuario:</strong> @<span id="perfilUsername"></span></p>
+                <p><strong>Correo:</strong> <span id="perfilCorreo"></span></p>
+                <p><strong>Género favorito:</strong> <span id="perfilGenero"></span></p>
+            </div>
+
+            <button id="btnCerrarSesion" class="btn btn-logout">Cerrar Sesión</button>
+            <button id="btnEliminarCuenta" class="btn btn-delete">Eliminar Cuenta</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
